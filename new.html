@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log in - W3Schools</title>
+    <link rel="icon" href="W3Schools_logo.svg.png">
+    <link rel="stylesheet" href="new.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+</head>
+
+<body>
+    <nav class="container">
+        <a>
+            <img src="W3Schools_logo.svg.png" alt="w3 schools logo" class="nav__logo" />
+        </a>
+    </nav>
+    <div class="main__container">
+        <form class="main__form">
+            <h1>Log in</h1>
+            <label for="email">Email<input type="email" name="email" id="email" placeholder="eg: doe.john@example.com" >
+            </label>
+            <label for="password">password<input type="password" name="password" id="password"  placeholder="eg: doesjohndoedoe" >
+                <span class="eye" onclick="myfunction()">
+                    <i id="hide1" class="fa fa-eye"></i>
+                    <i id="hide2" class="fa fa-eye-slash"></i>
+                </span>
+            </label>
+            <button type="submit" id="signup__button">
+                Login
+            </button>
+            <p>Forgot password?</p>
+        </form>
+
+
+    </div>
+    <script>
+        function myfunction(){
+            var x=document.getElementById("password");
+            var y=document.getElementById("hide1");
+            var z=document.getElementById("hide2");
+            if(x.type==='password')
+            {
+                x.type="text";
+                y.style.display="block";
+                z.style.display="none";
+            }
+            else
+            {
+                x.type="password";
+                y.style.display="none";
+                z.style.display="block";
+            }
+        }
+    </script>
+    		<table id="table" class="container">
+                <tr>
+                    <th>S. No.</th>
+                    <th>Email</th>
+                </tr>
+            </table>
+    
+            <!-- Footer -->
+            <footer>
+                <ul class="container">
+                    <a href='https://www.google.co.in/'>
+                        <button type="submit" id="Help">
+                            <h3>?Help </h3>
+                          </button>
+                        </a>
+                        <li class="footer__item">
+                            <p>&copy; 1999-2022</p>
+                        </li>
+                        <li class="footer__item">
+                            <a href="#" class="footer__link">W3schools. </a>
+                        </li>
+                        <li class="footer__item">
+                            All rights reserved.
+                        </li>
+                        <li class="footer__item">
+                            <a href="#" class="footer__link">Cookie policy, </a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="#" class="footer__link">Privacy Policy </a>
+                        </li>
+                        <li class="footer__item">
+                            and
+                        </li>
+                        <li class="footer__item">
+                            <a href="#" class="footer__link"> Terms.</a>
+                        </li>           
+                </ul>
+            </footer>
+            <script src="new.js"></script>
+        </body>
+        
+        </html>
